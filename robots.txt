@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bagh.undo.it/sitemap.xml
+Sitemap: https://github.com/Ahnaf-Tahsin/Bangla-game--Bagh-Arena-/blob/main/sitemap.xml
