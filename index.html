@@ -1959,8 +1959,8 @@ function viewSettings(){
    <div class="setrow"><span>${L('Field of view','দৃষ্টিসীমা (FOV)')}</span><span>${rng('fov',70,110,1)} <b id="v_fov">${s.fov}</b></span></div>
    <div class="setrow"><span>${L('Effects volume','শব্দের মাত্রা')}</span>${rng('vol',0,1,.05)}</div>
    <div class="setrow"><span>${L('Menu music (sitar and drone)','মেনুর সুর (সেতার ও তানপুরা)')}</span>${rng('music',0,1,.05)}</div>
-   <div class="setrow"><span>${L('Picture quality','ছবির মান')}</span>${sw('quality',s.quality,q)}</div>
-   <div class="setrow"><span>${L('Animated menu background','চলমান মেনু ব্যাকগ্রাউন্ড')}</span>${sw('bg',s.bg?1:0,onoff)}</div>
+   <div class="setrow"><span>${L('Picture quality','গ্রাফিক্স')}</span>${sw('quality',s.quality,q)}</div>
+   <div class="setrow"><span>${L('Animated menu background','লাইভ মেনু ব্যাকগ্রাউন্ড')}</span>${sw('bg',s.bg?1:0,onoff)}</div>
    <div class="setrow"><span>${L('Break reminders','বিরতির মনে করিয়ে দেওয়া')}<br><small style="color:var(--jute)">${L('A friendly note after 25 minutes of play','২৫ মিনিট খেললে একটি বন্ধুসুলভ বার্তা')}</small></span>${sw('well',s.wellness?1:0,onoff)}</div>
    <div class="setrow"><span>${L('Player','খেলোয়াড়')}: <b>${esc(S.name)}</b></span><span><button class="btn sm alt" data-act="switch">${L('Switch player','খেলোয়াড় বদলাও')}</button></span></div>
   </div>`;
@@ -1968,8 +1968,8 @@ function viewSettings(){
 function viewGuide(){
   const k=(a,b)=>`<div style="margin:7px 0"><span class="kbd">${a}</span>${b}</div>`;
   return `<div class="row2"><div class="panel"><h3>${P('Controls','নিয়ন্ত্রণ')}</h3>
-   <div class="nt"><p class="sub">${L('Click the game to capture the mouse. Esc gives it back.','মাউস ধরতে গেমে ক্লিক করো। Esc চাপলে ছেড়ে দেবে।')}</p>
-   ${k('W A S D',L('move','চলো'))}${k(L('Mouse','মাউস'),L('look and aim','চারদিকে দেখো ও নিশানা করো'))}${k(L('Left click','বাম ক্লিক'),L('shoot (hold for automatic weapons)','গুলি (অটো অস্ত্রে ধরে রাখো)'))}${k(L('Right click','ডান ক্লিক'),L('aim down sights, scope with the sniper','এইম করো, স্নাইপারে স্কোপ'))}${k('Shift',L('sprint (cannot shoot while sprinting)','দৌড় (দৌড়ানোর সময় গুলি চলে না)'))}${k('C',L('crouch, or slide while sprinting','বসো, দৌড়ে থাকলে স্লাইড'))}${k('Q',L('Bagher Jhap, the tiger pounce dash','বাঘের ঝাঁপ, লাফিয়ে সামনে ছোটা'))}${k('Space',L('jump','লাফ'))}${k('R',L('reload','রিলোড'))}${k('1 / 2',L('main weapon / pistol (mouse wheel works too)','প্রধান অস্ত্র / পিস্তল (মাউস হুইলও চলে)'))}${k('Tab',L('hold for the scoreboard','স্কোরবোর্ডের জন্য ধরে রাখো'))}</div>
+   <div class="nt"><p class="sub">${L('Click the game to capture the mouse. Esc gives it back.','মাউস ধরতে গেমে ক্লিক করো। Esc চাপলে গেম থেকে বের হওয়া যায়।')}</p>
+   ${k('W A S D',L('move','চলো'))}${k(L('Mouse','মাউস'),L('look and aim','চারদিকে দেখো ও বন্দুক নিশানা করো'))}${k(L('Left click','বাম ক্লিক'),L('shoot (hold for automatic weapons)','গুলি (অটো অস্ত্রে ধরে রাখো)'))}${k(L('Right click','ডান ক্লিক'),L('aim down sights, scope with the sniper','এইম করো, স্নাইপারে স্কোপ'))}${k('Shift',L('sprint (cannot shoot while sprinting)','দৌড় (দৌড়ানোর সময় গুলি করা যায় না)'))}${k('C',L('crouch, or slide while sprinting',  ' বসে থাকো অথবা  থাকলে স্লাইড করো '))}${k('Q',L('Bagher Jhap, the tiger pounce dash','বাঘের ঝাঁপ, লাফিয়ে সামনে ছোটা'))}${k('Space',L('jump','লাফ'))}${k('R',L('reload','রিলোড'))}${k('1 / 2',L('main weapon / pistol (mouse wheel works too)','প্রধান অস্ত্র / পিস্তল (মাউস হুইল দিয়েও করা যায় )'))}${k('Tab',L('hold for the scoreboard','স্কোরবোর্ডের জন্য চেপে রাখো'))}</div>
    <div class="ot"><p class="sub">${L('Left thumb moves, right thumb looks. Push the stick to its rim to sprint.','বাম বুড়ো আঙুলে চলো, ডান বুড়ো আঙুলে দেখো। দৌড়াতে স্টিক একেবারে কিনারে ঠেলো।')}</p>
    ${k('●',L('Big red button shoots. Drag on it to aim at the same time.','বড় লাল বোতামে গুলি। চেপে ধরে টেনে নিশানাও ঠিক করা যায়।'))}${k('◎',L('Aim down sights (tap to switch on and off)','এইম (ট্যাপ করে চালু/বন্ধ)'))}${k('▲',L('Jump','লাফ'))}${k('▼',L('Crouch, or slide while sprinting','বসো, দৌড়ে থাকলে স্লাইড'))}${k('⚡',L('Bagher Jhap, the tiger pounce dash','বাঘের ঝাঁপ'))}</div></div>
    <div><div class="panel"><h3>${P('Run moves','দৌড়ের কৌশল')}</h3>
