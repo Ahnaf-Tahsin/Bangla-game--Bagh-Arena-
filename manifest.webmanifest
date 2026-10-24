@@ -1,21 +1,21 @@
 {
-  "name": "Bagh Arena | বাঘ অ্যারেনা",
-  "short_name": "Bagh Arena",
-  "description": "A free Bangladeshi 3D shooter. Fight bots in Puran Dhaka, a Bengal village and the Sundarbans.",
+  "name": "Hunkar: Roar of Ekattor & July-24 | হুঙ্কার",
+  "short_name": "Hunkar",
+  "description": "Free Bangla 3D shooter for phone and PC. Ten Bengal maps, 15 guns, tiger-roar multi-kills. Also known as Bagh Arena (বাঘ অ্যারেনা).",
   "id": "/",
-  "start_url": "./",
-  "scope": "./",
+  "start_url": "/?source=pwa",
+  "scope": "/",
   "display": "fullscreen",
   "display_override": ["fullscreen", "standalone"],
   "orientation": "landscape",
   "background_color": "#06261d",
   "theme_color": "#06261d",
-  "lang": "bn",
-  "dir": "ltr",
+  "lang": "en",
   "categories": ["games", "entertainment"],
   "icons": [
-    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
-    {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"},
+    {"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
   ]
 }
